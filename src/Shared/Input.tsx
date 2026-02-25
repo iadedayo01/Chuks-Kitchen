@@ -53,7 +53,7 @@ const Input: React.FC<FormInputProps> = ({
           className={`w-full border rounded-lg ${padding} 
             ${icon ? "pl-10" : "pl-3"} 
             ${isPassword ? "pr-10" : "pr-3"} 
-           ${width} border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${BG}`}
+           ${width} border-gray-300 focus:outline-none ${type !== "checkbox" ? "focus:ring-2":""} focus:ring-blue-500 ${BG}`}
         />
 
         {/* Password Toggle */}

@@ -9,10 +9,10 @@ import { FaApple } from "react-icons/fa";
 
 const SignUpComponent = () => {
   return (
-    <div className=" flex md:py-0 items-center h-full w-full">
+    <div className=" flex md:py-0 items-center h-175 w-full ">
       {/* Left Banner */}
       <div
-        className=" hidden relative md:py-0 md:flex basis-1/2 w-full h-screen flex-col bg-cover"
+        className=" hidden relative md:flex basis-1/2 w-full h-full flex-col bg-cover"
         style={{ backgroundImage: `url(${IMG})` }}
       >
         {/* Overlay */}
@@ -125,9 +125,9 @@ const SignUpComponent = () => {
         </div>
         <div className=" text-xs font-normal justify-center flex">
           <h1 className=" text-[#616161]">
-            Don't have an account?
-            <Link to="/signup">
-              <span className=" text-[#1C7FF9]"> Create an account</span>
+            Already have an account?
+            <Link to="/signin">
+              <span className=" text-[#1C7FF9]"> Sign In</span>
             </Link>
           </h1>
         </div>
