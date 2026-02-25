@@ -18,7 +18,7 @@ const OnboardingComponent = () => {
     { icon: <PiTruckFill />, info: "Fast & Reliable Delivery" },
   ];
   return (
-    <div className="flex h-full w-full">
+    <div className="lg:flex flex-row  w-full">
       {/* Left Banner */}
       <div className=" basis-1/2 w-full h-screen">
         <img
@@ -40,7 +40,7 @@ const OnboardingComponent = () => {
             bring the rich culinary heritage of Nigeria right to your doorstep.
           </h1>
         </div>
-        <div className=" grid py-8 px-10 gap-3 grid-cols-2">
+        <div className=" grid py-8 px-10 gap-3 grid-cols-1 lg:grid-cols-2">
           {details.map((dets) => (
             <div className=" flex gap-3 items-center">
               <div className=" p-2 rounded-lg bg-[#FFE1C4] text-[#FF7A18] ">

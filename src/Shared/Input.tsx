@@ -5,7 +5,7 @@ type FormInputProps = {
   label?: string;
   name: string;
   type?: string;
-  padding: string;
+  padding?: string;
   placeholder?: string;
   icon?: ReactElement;
   BG?: string;

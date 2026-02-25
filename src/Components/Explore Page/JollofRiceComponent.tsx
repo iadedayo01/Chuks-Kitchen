@@ -44,20 +44,20 @@ const JollofRiceComponent = () => {
   return (
     <div className=" px-5">
       <div>
-        <h1 className=" font-bold text-3xl text-[#1F2937]">
+        <h1 className=" font-bold text-lg lg:text-3xl text-[#1F2937]">
           Jollof Rice & Entrees
         </h1>
       </div>
-      <div className=" grid grid-cols-3 gap-10 py-8 px-5">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-8 px-5">
         {jRice.map((rice) => (
           <Link to={`/explore/product-info/${rice.id}`} state={{ id: rice.id}}>
             <div className=" bg-white gap-5 space-y-3 shadow hover:bg-gray-50 rounded-xl">
               <img src={rice.image} alt="image" className=" rounded-t-xl" />
               <div className=" px-3">
-                <h1 className=" font-semibold text-xl text-[#1F2937]">
+                <h1 className=" font-semibold text-lg lg:text-xl text-[#1F2937]">
                   {rice.name}
                 </h1>
-                <span className=" text-[#1F2937] text-base font-medium">
+                <span className=" text-[#1F2937] text-sm lg:text-base font-medium">
                   {rice.info}
                 </span>
               </div>

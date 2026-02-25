@@ -71,18 +71,18 @@ const PopularComponent = () => {
   return (
     <div className=" px-5">
       <div>
-        <h1 className=" font-bold text-3xl text-[#1F2937]">Popular</h1>
+        <h1 className=" font-bold text-lg lg:text-3xl text-[#1F2937]">Popular</h1>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 gap-10 py-8 px-5">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-8 px-5">
         {popularMenu.map((popular) => (
           <Link to={`/explore/product-info/${popular.id}`} state={{ id: popular.id }}>
             <div className=" bg-white gap-5 space-y-3 shadow hover:bg-gray-50 rounded-xl">
               <img src={popular.image} alt="image" className=" rounded-t-xl" />
               <div className=" px-3">
-                <h1 className=" font-semibold text-xl text-[#1F2937]">
+                <h1 className=" font-semibold text-lg lg:text-xl text-[#1F2937]">
                   {popular.name}
                 </h1>
-                <span className=" text-[#1F2937] text-base font-medium">
+                <span className=" text-[#1F2937] text-sm lg:text-base font-medium">
                   {popular.info}
                 </span>
               </div>

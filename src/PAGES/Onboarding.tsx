@@ -4,7 +4,7 @@ import OnboardingComponent from "../Components/Onboarding/OnboardingComponent";
 
 const Onboarding = () => {
   return (
-    <div className=" h-screen">
+    <div className=" ">
       <OnboardingComponent />
     </div>
   );

@@ -11,7 +11,7 @@ interface navbarProps {
 
 const Navbar = () => {
   const [activeNavbar, setActiveNavbar] = useState<string>("Home");
-  const [showMobileNav,setShowMobileNav]=useState(false)
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const navbar: navbarProps[] = [
     { name: "Home", route: "/home" },
@@ -41,32 +41,35 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-        <div className=" hidden md:block">
+      <div className=" hidden md:block">
         <Link to="">
-        <Button
-          text="Login"
-          borderRadius="rounded-sm"
-          BG="bg-[#FF7A18]"
-          padding="py-2 px-7"
-          textColor="text-white"
-          textSize="text-base"
-          border="border-none"
-        />
-      </Link>
-        </div>
+          <Button
+            text="Login"
+            borderRadius="rounded-sm"
+            BG="bg-[#FF7A18]"
+            padding="py-2 px-7"
+            textColor="text-white"
+            textSize="text-base"
+            border="border-none"
+          />
+        </Link>
+      </div>
       {/* </div> */}
 
       {/*  */}
-      <div className="  md:hidden" onClick={()=>setShowMobileNav(true)}>
-        <BiMenu size={40}/>
+      <div className="  md:hidden" onClick={() => setShowMobileNav(true)}>
+        <BiMenu size={40} />
       </div>
-
 
       {/* mobile nav */}
       {showMobileNav && (
-        <div className=" h-screen bg-yellow-300 w-full fixed left-0 top-0 z-9999">
-          <h1>drftghj</h1>
-          <BiX size={30} onClick={()=>setShowMobileNav(false)}/>
+        <div className=" h-screen bg-emerald-700 px-5 py-5 w-full fixed h left-0 top-0 z-9999">
+          <div className=" flex bg-gray-300 items-center justify-between">
+            <h1 className=" font-['Island_Moments'] text-[#FF7A18] text-4xl">Chuks Kitchen</h1>
+            <div>
+              <BiX size={40} onClick={() => setShowMobileNav(false)} />
+            </div>
+          </div>
         </div>
       )}
     </nav>
