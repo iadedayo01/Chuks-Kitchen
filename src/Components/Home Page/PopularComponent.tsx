@@ -22,8 +22,8 @@ const PopularComponent = () => {
   ];
   return (
     <>
-      <div className=" flex w-full justify-center -translate-y-4">
-        <form method=" post">
+      <div className=" px-5 py-20 relative flex flex-col">
+        <div className=" flex w-full absolute top-0 items-center justify-center -translate-y-4">
           <Input
             padding="py-2"
             type="text"
@@ -31,11 +31,10 @@ const PopularComponent = () => {
             name="search"
             BG="bg-white"
             icon={<FaSearch />}
-            width="w-full"
+            width="w-full max-w-[800px]"
           />
-        </form>
-      </div>
-      <div className=" px-5 py-20 flex flex-col">
+        </div>
+
         <div className=" flex justify-center">
           <h1 className="font-bold lg:text-3xl text-[#1F2937]">
             Popular Categories

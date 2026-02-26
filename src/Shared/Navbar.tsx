@@ -63,13 +63,39 @@ const Navbar = () => {
 
       {/* mobile nav */}
       {showMobileNav && (
-        <div className=" h-screen bg-emerald-700 px-5 py-5 w-full fixed h left-0 top-0 z-9999">
-          <div className=" flex bg-gray-300 items-center justify-between">
-            <h1 className=" font-['Island_Moments'] text-[#FF7A18] text-4xl">Chuks Kitchen</h1>
+        <div className=" h-screen bg-[#FF7A18] px-5 py-5 w-full fixed h left-0 top-0 z-9999">
+          <div className=" flex items-center justify-between">
+            <h1 className=" font-['Island_Moments'] text-white text-4xl">
+              Chuks Kitchen
+            </h1>
             <div>
-              <BiX size={40} onClick={() => setShowMobileNav(false)} />
+              <BiX
+                size={40}
+                className=" text-white"
+                onClick={() => setShowMobileNav(false)}
+              />
             </div>
           </div>
+          <div className=" flex w-full py-5 gap-4 p flex-col items-center">
+            {navbar.map((nav) => (
+              <Link to={nav.route}>
+                <div className=" text-2xl hover:text-3xl text-white py-5 flex justify-center">
+                  {nav.name}
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link to="/home">
+            <Button
+              text="Login"
+              borderRadius="rounded-sm"
+              BG="bg-white"
+              padding="py-2"
+              textColor="text-black"
+              textSize="text-lg"
+              border="border-white border"
+            />
+          </Link>
         </div>
       )}
     </nav>

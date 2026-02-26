@@ -45,6 +45,7 @@ const SignInComponent = () => {
             name="email"
             type="email"
             padding="py-2"
+            width="w-full"
             placeholder="name@gmail.com"
             icon={<FiMail />}
           />
@@ -53,6 +54,7 @@ const SignInComponent = () => {
             label="Password"
             name="password"
             padding="py-2"
+            width="w-full"
             type="password"
             placeholder="******"
             icon={<FiLock />}
@@ -65,15 +67,17 @@ const SignInComponent = () => {
             </span>
           </Link>
         </div>
-        <Button
-          text="Continue"
-          BG="bg-[#FF7A18]"
-          padding="py-2"
-          textColor="text-white"
-          border="border-none"
-          borderRadius="rounded-lg"
-          textSize="text-base"
-        />
+        <Link to="/home">
+          <Button
+            text="Continue"
+            BG="bg-[#FF7A18]"
+            padding="py-2"
+            textColor="text-white"
+            border="border-none"
+            borderRadius="rounded-lg"
+            textSize="text-base"
+          />
+        </Link>
         <span className=" flex justify-center text-xs text-[#1F2937]">
           Or continue with
         </span>

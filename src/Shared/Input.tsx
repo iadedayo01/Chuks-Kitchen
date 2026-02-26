@@ -9,7 +9,7 @@ type FormInputProps = {
   placeholder?: string;
   icon?: ReactElement;
   BG?: string;
-  width?: string;
+  width: string;
   error?: string;
 };
 
@@ -50,10 +50,10 @@ const Input: React.FC<FormInputProps> = ({
           name={name}
           type={isPassword && showPassword ? "text" : type}
           placeholder={placeholder}
-          className={`w-full border rounded-lg ${padding} 
+          className={` border rounded-lg ${padding} 
             ${icon ? "pl-10" : "pl-3"} 
             ${isPassword ? "pr-10" : "pr-3"} 
-           ${width} border-gray-300 focus:outline-none ${type !== "checkbox" ? "focus:ring-2":""} focus:ring-blue-500 ${BG}`}
+           ${width} border-gray-300  focus:outline-none ${type !== "checkbox" ? "focus:ring-2":""} focus:ring-blue-500 ${BG}`}
         />
 
         {/* Password Toggle */}

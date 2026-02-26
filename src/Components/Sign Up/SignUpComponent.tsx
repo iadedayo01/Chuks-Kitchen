@@ -43,6 +43,7 @@ const SignUpComponent = () => {
           <Input
             label="Email"
             name="email"
+            width="w-full"
             type="email"
             padding="py-2"
             placeholder="name@gmail.com"
@@ -52,6 +53,7 @@ const SignUpComponent = () => {
           <Input
             label="Phone number"
             name="number"
+            width="w-full"
             type="text"
             padding="py-2"
             placeholder="(123) 456-7890"
@@ -61,6 +63,7 @@ const SignUpComponent = () => {
           <Input
             label="Password"
             name="password"
+            width="w-full"
             padding="py-2"
             type="password"
             placeholder="******"
@@ -71,66 +74,69 @@ const SignUpComponent = () => {
             label="Confirm Password"
             name="password"
             padding="py-2"
+            width="w-full"
             type="password"
             placeholder="******"
             icon={<FiLock />}
           />
           <div className=" items-center flex">
-            <Input name="check" type="checkbox" />
+            <Input name="check" type="checkbox" width="w-full" />
             <h1 className=" text-sm text-nowrap">
               I agree to the{" "}
               <span className=" text-blue-400">Terms & Conditions</span> and{" "}
               <span className=" text-blue-400"> Privacy policy</span>
             </h1>
           </div>
-          <Button
-          text="Continue"
-          BG="bg-[#FF7A18]"
-          padding="py-2"
-          textColor="text-white"
-          border="border-none"
-          borderRadius="rounded-lg"
-          textSize="text-base"
-        />
-        <span className=" flex justify-center text-xs text-[#1F2937]">
-          Or continue with
-        </span>
-        <div className=" py-3 flex flex-col gap-4">
-          <Link to="https://google.com">
+          <Link to="/home">
             <Button
-              text="Continue with Google"
-              BG="bg-[#FFFFFF]"
-              padding="py-1"
-              textColor="text-[#3B4758]"
-              border="border border-{#BDBDBD]"
+              text="Continue"
+              BG="bg-[#FF7A18]"
+              padding="py-2"
+              textColor="text-white"
+              border="border-none"
               borderRadius="rounded-lg"
-              font="font-roboto"
-              textSize="text-sm"
-              icon={<FcGoogle />}
+              textSize="text-base"
             />
           </Link>
-          <Link to="https://apple.com">
-            <Button
-              text="Continue with Apple"
-              BG="bg-[#FFFFFF]"
-              padding="py-1"
-              textColor="text-[#3B4758]"
-              border="border border-{#BDBDBD]"
-              borderRadius="rounded-lg"
-              font="font-roboto"
-              textSize="text-sm"
-              icon={<FaApple />}
-            />
-          </Link>
-        </div>
-        <div className=" text-xs font-normal justify-center flex">
-          <h1 className=" text-[#616161]">
-            Already have an account?
-            <Link to="/signin">
-              <span className=" text-[#1C7FF9]"> Sign In</span>
+          <span className=" flex justify-center text-xs text-[#1F2937]">
+            Or continue with
+          </span>
+          <div className=" py-3 flex flex-col gap-4">
+            <Link to="https://google.com">
+              <Button
+                text="Continue with Google"
+                BG="bg-[#FFFFFF]"
+                padding="py-1"
+                textColor="text-[#3B4758]"
+                border="border border-{#BDBDBD]"
+                borderRadius="rounded-lg"
+                font="font-roboto"
+                textSize="text-sm"
+                icon={<FcGoogle />}
+              />
             </Link>
-          </h1>
-        </div>
+            <Link to="https://apple.com">
+              <Button
+                text="Continue with Apple"
+                BG="bg-[#FFFFFF]"
+                padding="py-1"
+                textColor="text-[#3B4758]"
+                border="border border-{#BDBDBD]"
+                borderRadius="rounded-lg"
+                font="font-roboto"
+                textSize="text-sm"
+                icon={<FaApple />}
+              />
+            </Link>
+          </div>
+          <div className=" text-xs font-normal justify-center flex">
+            <h1 className=" text-[#616161]">
+              Already have an account?
+              <Link to="/signin">
+                <span className=" text-[#1C7FF9]"> Sign In</span>
+              </Link>
+            </h1>
+          </div>
         </div>
       </div>
     </div>

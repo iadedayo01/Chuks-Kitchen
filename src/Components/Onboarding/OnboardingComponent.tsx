@@ -50,25 +50,29 @@ const OnboardingComponent = () => {
             </div>
           ))}
         </div>
-        <div className=" space-y-4 px-10">
-          <Button
-            text="Start Your Order"
-            textColor="text-white"
-            padding="py-2"
-            BG="bg-[#FF7A18]"
-            border="border-none"
-            borderRadius="rounded-lg"
-            textSize="text-base"
-          />
-          <Button
-            text="Learn More About Us"
-            textColor="text-[#1E88E5]"
-            padding="py-2"
-            BG="bg-white"
-            border="border-2"
-            borderRadius="rounded-lg"
-            textSize="text-base"
-          />
+        <div className=" space-y-4 flex flex-col px-10">
+          <Link to="/home">
+            <Button
+              text="Start Your Order"
+              textColor="text-white"
+              padding="py-2"
+              BG="bg-[#FF7A18]"
+              border="border-none"
+              borderRadius="rounded-lg"
+              textSize="text-base"
+            />
+          </Link>
+          <Link to="">
+            <Button
+              text="Learn More About Us"
+              textColor="text-[#1E88E5]"
+              padding="py-2"
+              BG="bg-white"
+              border="border-2"
+              borderRadius="rounded-lg"
+              textSize="text-base"
+            />
+          </Link>
         </div>
 
         {/* Logo Header */}

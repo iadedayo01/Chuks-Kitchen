@@ -13,6 +13,7 @@ const SpecialInstructionComponent = () => {
 food is tasty"
         name="instructions"
         padding="py-6"
+        width="w-full"
       />
     </div>
   );
