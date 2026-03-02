@@ -79,13 +79,13 @@ const Navbar = () => {
           <div className=" flex w-full py-5 gap-4 p flex-col items-center">
             {navbar.map((nav) => (
               <Link to={nav.route}>
-                <div className=" text-2xl hover:text-3xl text-white py-5 flex justify-center">
+                <div className=" text-2xl hover:text-3xl text-white py-5 flex justify-center" onClick={()=> setShowMobileNav(false)}>
                   {nav.name}
                 </div>
               </Link>
             ))}
           </div>
-          <Link to="/home">
+          <Link to="/home" >
             <Button
               text="Login"
               borderRadius="rounded-sm"

@@ -104,7 +104,7 @@ const CartComponent = () => {
               Add more items from Chuks Kitchen
             </span>
           </div>
-          <Link to="">
+          <Link to="/order-summary">
             <Button text="Proceed to Summary"
             BG="bg-[#FF7A18]"
             padding="py-2 px-1"

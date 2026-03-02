@@ -20,7 +20,7 @@ const OnboardingComponent = () => {
   return (
     <div className="lg:flex flex-row  w-full">
       {/* Left Banner */}
-      <div className=" basis-1/2 w-full h-screen">
+      <div className=" basis-1/2 w-full h-60 lg:h-screen">
         <img
           src={IMG}
           alt="image"
