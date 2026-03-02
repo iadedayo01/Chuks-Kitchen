@@ -23,7 +23,7 @@ const PopularComponent = () => {
   return (
     <>
       <div className=" px-5 py-20 relative flex flex-col">
-        <div className=" flex w-full absolute top-0 items-center justify-center -translate-y-4">
+        <div className=" flex w-3/4 absolute top-0 items-center justify-center -translate-y-4">
           <Input
             padding="py-2"
             type="text"
