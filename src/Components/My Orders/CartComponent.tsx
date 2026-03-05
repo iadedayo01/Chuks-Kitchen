@@ -55,7 +55,7 @@ const CartComponent = () => {
   ];
   return (
     <div className="  w-full py-5 px-10">
-      <div className=" py-10 space-y-2 px-2 bg-white ">
+      <div className=" py-10 space-y-2 px-2 shadow rounded-lg bg-white ">
         <h1 className=" text-lg lg:text-3xl font-bold py-3">Your Cart</h1>
         {cartItems.map((cart) => (
           <div className=" flex flex-wrap px-10 border shadow border-[#BDBDBD] rounded-sm items-center justify-between ">
