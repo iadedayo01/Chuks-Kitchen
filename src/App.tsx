@@ -11,6 +11,7 @@ import Footer from "./Shared/Footer";
 import MyOrders from "./PAGES/MyOrders";
 import ProductInfo from "./PAGES/ProductInfo";
 import OrderSummary from "./PAGES/OrderSummary";
+import DeliveryDetailsPage from "./PAGES/DeliveryDetailsPage";
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/explore/product-info/:id" element={<ProductInfo />} />
         <Route path="/orders" element={<MyOrders />} />
         <Route path="order-summary" element={<OrderSummary />} />
+        <Route path="delivery-details" element={<DeliveryDetailsPage />} />
       </Routes>
       <Footer />
     </div>

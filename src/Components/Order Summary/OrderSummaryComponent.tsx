@@ -15,14 +15,14 @@ const OrderSummaryComponent = () => {
 
   const deliveryInfo = ["Delivery", "PickUp"];
 
-  const details: detailsProps[] = [
+  const summaryDetails: detailsProps[] = [
     { name: "Subtotal", price: "#9,200" },
     { name: "Delivery Fee", price: "#500" },
     { name: "Service Fee", price: "#200" },
     { name: "Tax", price: "#0" },
   ];
   return (
-    <div className=" h- py-5 lg:py-20 w-full flex items-center justify-center">
+    <div className=" py-5 lg:py-20 w-full flex items-center justify-center">
       <div className=" bg-white px-5 py-10 w-full shadow rounded-lg lg:basis-1/2 basis-3/4 flex flex-col">
         <div className=" border-b border-[#BDBDBD] py-1 w-full">
           <h1 className=" text-3xl font-bold">Order Summary</h1>
@@ -49,7 +49,7 @@ const OrderSummaryComponent = () => {
           </div>
         </div>
         <div className=" border-b border-[#BDBDBD] py-3">
-          {details.map((dets) => (
+          {summaryDetails.map((dets) => (
             <div className=" flex py-1 text-[#4B5563] text-base font-medium justify-between">
               <h1>{dets.name}</h1>
               <span>{dets.price}</span>
@@ -81,7 +81,7 @@ const OrderSummaryComponent = () => {
             placeholder="E.g no onion, food is too spicy, food is too hot hhhhhhhhhh food is tasty"
           />
         </div>
-        <Link to="">
+        <Link to="/delivery-details">
           <Button
             BG="bg-[#FF7A18]"
             text="Proceed to Checkout"
